@@ -1,8 +1,8 @@
 //--- Plugins ---
 plugins {
     id "com.jfrog.bintray" version "1.8.4"
-	id "com.jfrog.artifactory" version "4.7.5"
-	id "com.gradle.plugin-publish" version "0.10.0"
+    id "com.jfrog.artifactory" version "4.7.5"
+    id "com.gradle.plugin-publish" version "0.10.0"
     id 'com.github.ben-manes.versions' version '0.20.0'
 }
 
@@ -11,7 +11,7 @@ apply plugin: 'maven-publish'
 
 
 //--- Project information ---
-group = 'io.quintessent.jmeter'
+group = 'io.nipun.jmeter'
 archivesBaseName = 'jmeter-gradle-plugin'
 
 ext.thisPluginVersion="1.1.3"
