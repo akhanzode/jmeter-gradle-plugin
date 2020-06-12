@@ -14,7 +14,7 @@ apply plugin: 'maven-publish'
 group = 'io.quintessent.jmeter'
 archivesBaseName = 'jmeter-gradle-plugin'
 
-ext.thisPluginVersion="1.1.2"
+ext.thisPluginVersion="1.1.3"
 ext.jmVersion = "5.3"
 ext.jmTestVersion = "5.0"
 ext.jmPluginVersion = "1.4.0"
