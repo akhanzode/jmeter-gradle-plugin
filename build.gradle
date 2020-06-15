@@ -14,7 +14,7 @@ apply plugin: 'maven-publish'
 group = 'io.nipun.jmeter'
 archivesBaseName = 'jmeter-gradle-plugin'
 
-ext.thisPluginVersion="1.1.3"
+ext.thisPluginVersion="1.1.2"
 ext.jmVersion = "5.3"
 ext.jmTestVersion = "5.0"
 ext.jmPluginVersion = "1.4.0"
@@ -148,9 +148,9 @@ processResources.doLast {
 //--- mvn-publish ---
 def pomConfig = {
 	scm {
-		url 'scm:git@github.com:noelob/jmeter-gradle-plugin.git'
-		connection 'scm:git@github.com:noelob/jmeter-gradle-plugin.git'
-		developerConnection 'scm:git@github.com:noelob/jmeter-gradle-plugin.git'
+		url 'scm:git@github.com:akhanzode/jmeter-gradle-plugin.git'
+		connection 'scm:git@github.com:akhanzode/jmeter-gradle-plugin.git'
+		developerConnection 'scm:git@github.com:akhanzode/jmeter-gradle-plugin.git'
 	}
 	licenses {
 		license {
@@ -210,12 +210,12 @@ bintray {
     pkg {
         repo = "gradle-plugins"
         name = "$archivesBaseName"
-        userOrg = "noelob"
+        userOrg = "akhanzode"
         licenses = ['Apache-2.0']
         publicDownloadNumbers = true
-        websiteUrl = 'https://github.com/noelob/jmeter-gradle-plugin'
-        issueTrackerUrl = 'https://github.com/noelob/jmeter-gradle-plugin/issues'
-        vcsUrl = 'https://github.com/noelob/jmeter-gradle-plugin.git'
+        websiteUrl = 'https://github.com/akhanzode/jmeter-gradle-plugin'
+        issueTrackerUrl = 'https://github.com/akhanzode/jmeter-gradle-plugin/issues'
+        vcsUrl = 'https://github.com/akhanzode/jmeter-gradle-plugin.git'
 
         version {
             name = project.version //Bintray logical version name
@@ -239,8 +239,8 @@ publishPlugins.onlyIf {
 	!(version ==~ /.*SNAPSHOT/)
 }
 pluginBundle {
-    website = 'https://github.com/noelob/jmeter-gradle-plugin'
-    vcsUrl = 'https://github.com/noelob/jmeter-gradle-plugin.git'
+    website = 'https://github.com/akhanzode/jmeter-gradle-plugin'
+    vcsUrl = 'https://github.com/akhanzode/jmeter-gradle-plugin.git'
     description = 'A Gradle plugin for running JMeter tests'
     tags = ['jmeter', 'performance']
 
